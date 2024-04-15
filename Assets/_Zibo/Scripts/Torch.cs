@@ -7,21 +7,27 @@ public class Torch : MonoBehaviour
     RaycastHit hit;
     float timer;
     public float holdTime = 1.5f;
+    public Transform direction;
 
-    // Start is called before the first frame update
-    void Start()
+    Vector3 _forward;
+    float _maxDistance;
+
+    private void Start()
     {
-        
+        Vector3 _temp = direction.position - transform.position;
+        _forward = _temp.normalized;
+        _maxDistance = Vector3.Distance(transform.position, direction.position);
     }
 
     // Update is called once per frame
     void Update()
     {
         int layerMask = 1 << 8;
+        Debug.DrawRay(transform.position, _forward * _maxDistance, Color.yellow);
 
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 10, layerMask))
+        if (Physics.Raycast(transform.position, _forward, out hit, _maxDistance, layerMask))
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+            
 
             if (timer < holdTime)
             {
