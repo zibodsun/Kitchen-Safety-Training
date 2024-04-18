@@ -5,31 +5,33 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class KitchenTowel : MonoBehaviour
 {
-    public Material towelMaterial;
-    public Material invisibleMaterial;
+    public bool inHand;
+    public Transform hand;
+    public XRSimpleInteractable rollInteractable;
 
-    XRGrabInteractable interactable;
-    Renderer rend;
-    KitchenRoll roll;
     Rigidbody rb;
+    XRGrabInteractable interactable;
 
     private void Awake()
     {
         interactable = GetComponent<XRGrabInteractable>();
-        rend = GetComponent<Renderer>();
-        roll = GetComponentInParent<KitchenRoll>();
         rb = GetComponent<Rigidbody>();
-
-        interactable.firstSelectEntered.AddListener(TowelPick);
-        rend.material = invisibleMaterial;
-        
     }
 
-    public void TowelPick(SelectEnterEventArgs a) {
-        rend.material = towelMaterial;
-        roll.MakeTowel();
-
-        interactable.firstSelectEntered.RemoveAllListeners();
+    private void Update()
+    {
+        if (rollInteractable.isSelected && inHand)
+        {
+            transform.position = hand.position;
+            transform.rotation = hand.rotation;
+            rb.useGravity = false;
+            rb.isKinematic = true;
+        }
+        else {
+            inHand = false;
+            interactable.enabled = true;
+            rb.useGravity = true;
+            rb.isKinematic = false;
+        }
     }
-
 }
