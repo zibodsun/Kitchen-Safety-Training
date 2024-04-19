@@ -6,6 +6,7 @@ TagManager:
   tags:
   - sheet
   - Anchor
+  - onboardingBall
   layers:
   - Default
   - TransparentFX
