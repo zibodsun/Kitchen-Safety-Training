@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.67465025, z: 0, w: 0.7381376}
   m_LocalPosition: {x: 0.033, y: -0.31725645, z: -0.097}
-  m_LocalScale: {x: 1, y: 1, z: -1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3162644349430150173}
@@ -176,7 +176,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newTowelPiece: {fileID: 1786983745251121326, guid: be7670f36396b6e4f85d79f9f7185702, type: 3}
-  SpawnTowel: 0
 --- !u!1 &7118425189310122721
 GameObject:
   m_ObjectHideFlags: 0
