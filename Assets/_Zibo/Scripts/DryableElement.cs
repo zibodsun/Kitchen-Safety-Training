@@ -6,10 +6,12 @@ using UnityEngine;
 public class DryableElement : MonoBehaviour
 {
     Animator anim;
+    public bool sprayed;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
+        anim.speed = 0f;
     }
 
     private void OnTriggerEnter(Collider other)

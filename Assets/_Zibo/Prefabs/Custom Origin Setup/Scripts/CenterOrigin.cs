@@ -15,7 +15,7 @@ public class CenterOrigin : MonoBehaviour
     public float centeringDelay = 0.1f;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         StartCoroutine(Center(centeringDelay));
     }
@@ -34,7 +34,7 @@ public class CenterOrigin : MonoBehaviour
 
         xrorigin.MoveCameraToWorldLocation(new Vector3(spawn.position.x, xrorigin.Camera.transform.position.y, spawn.position.z));
         xrorigin.MatchOriginUpCameraForward(spawn.up, spawn.forward);
-
+        Debug.Log("Centered");
         if (locomotionSystem != null) {
             locomotionSystem.gameObject.SetActive(true);
         }
