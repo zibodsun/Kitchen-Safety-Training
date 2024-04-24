@@ -7,6 +7,7 @@ public class DryableElement : MonoBehaviour
 {
     Animator anim;
     public bool sprayed;
+    public bool clean;
 
     private void Awake()
     {
@@ -19,6 +20,16 @@ public class DryableElement : MonoBehaviour
         if(other.tag == "sheet")
         {
             anim.speed = 1f;
+        }
+    }
+
+    public void FinishCleaning()
+    {
+        if (sprayed) {
+            clean = true;
+        }
+        else {
+            Debug.Log("Area has not been sprayed before cleaning");
         }
     }
 
