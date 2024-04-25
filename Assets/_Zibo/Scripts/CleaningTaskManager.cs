@@ -12,6 +12,8 @@ public class CleaningTaskManager : MonoBehaviour
     [Header("Training variables")]
     public DryableElement element_1;
     public DryableElement element_2;
+    public SprayBottle sprayBottle;
+    public Transform spawnSprayBottle;
 
     StateMachine flow;
 
@@ -35,6 +37,8 @@ public class CleaningTaskManager : MonoBehaviour
         element_2.sprayed = false;
         element_1.clean = false;
         element_2.clean = false;
+        sprayBottle.transform.position = spawnSprayBottle.position;
+        sprayBottle.transform.rotation = spawnSprayBottle.rotation;
     }
 
     public void DisableColliders() {
