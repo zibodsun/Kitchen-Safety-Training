@@ -5890,6 +5890,7 @@ GameObject:
   - component: {fileID: 5019338040761017724}
   - component: {fileID: 7711854386304528016}
   - component: {fileID: 17215847803170118}
+  - component: {fileID: -4921475151464839567}
   m_Layer: 0
   m_Name: SprayBottle
   m_TagString: Untagged
@@ -6177,6 +6178,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nozzle: {fileID: 7998291832493835426}
+--- !u!114 &-4921475151464839567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7453597004500479340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae13b5339d5b15149bd3d40c0b6e0bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8468483477185384645
 GameObject:
   m_ObjectHideFlags: 0

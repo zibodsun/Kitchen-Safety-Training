@@ -37,6 +37,10 @@ public class CleaningTaskManager : MonoBehaviour
         element_2.sprayed = false;
         element_1.clean = false;
         element_2.clean = false;
+        element_1.GetComponent<Animator>().Play("Idle");
+        element_2.GetComponent<Animator>().Play("Idle");
+        element_1.GetComponent<Animator>().speed = 0f;
+        element_2.GetComponent<Animator>().speed = 0f;
         sprayBottle.transform.position = spawnSprayBottle.position;
         sprayBottle.transform.rotation = spawnSprayBottle.rotation;
     }

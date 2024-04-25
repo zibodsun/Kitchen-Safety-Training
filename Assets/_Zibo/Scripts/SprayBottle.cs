@@ -11,7 +11,7 @@ public class SprayBottle : MonoBehaviour
     public void Spray() {
         Debug.DrawRay(nozzle.position, nozzle.forward * 5f, Color.yellow);
 
-        if (!Physics.SphereCast(nozzle.position, .02f, nozzle.forward, out hit, .5f)) {
+        if (!Physics.SphereCast(nozzle.position, .03f, nozzle.forward, out hit, .5f)) {
             return;
         }
         Debug.Log("Hit " + hit.collider.gameObject.name);
