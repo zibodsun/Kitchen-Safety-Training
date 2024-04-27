@@ -12,10 +12,12 @@ public class KnifeTrainingManager : MonoBehaviour
     public GameObject knifePrefab;
 
     StateMachine flow;
+    TrainingManager trainingManager;
 
     private void Awake()
     {
         flow = FindObjectOfType<StateMachine>();
+        trainingManager = FindObjectOfType<TrainingManager>();
     }
 
     private void Update()
@@ -23,6 +25,7 @@ public class KnifeTrainingManager : MonoBehaviour
         if(hook1.trig && hook2.trig)
         {
             flow.TriggerUnityEvent("KnifeCompleted");
+            trainingManager.CompleteKnifeTraining();
         }
     }
     public void ResetTraining()

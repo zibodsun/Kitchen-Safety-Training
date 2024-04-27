@@ -16,16 +16,20 @@ public class CleaningTaskManager : MonoBehaviour
     public Transform spawnSprayBottle;
 
     StateMachine flow;
+    TrainingManager trainingManager;
 
     private void Awake()
     {
         flow = FindObjectOfType<StateMachine>();
+        trainingManager = FindObjectOfType<TrainingManager>();
     }
 
     private void Update()
     {
         if (elements.All(e => e.clean)) {
             flow.TriggerUnityEvent("CleaningCompleted");
+            trainingManager.CompleteCleaningTraining();
+
         }
     }
 
