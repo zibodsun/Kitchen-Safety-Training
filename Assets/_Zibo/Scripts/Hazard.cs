@@ -21,8 +21,8 @@ public class Hazard : MonoBehaviour
 
         if (!OB)
         {
-            anim.Play("HazardIndicatorFadeOut");
             correctSound.Play();
+            anim.Play("HazardIndicatorFadeOut");
         }
     }
 }
