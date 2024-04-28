@@ -3859,6 +3859,7 @@ MonoBehaviour:
   acceptColor: {r: 0.5660378, g: 0.19490923, b: 0.48485023, a: 0}
   correctSound: {fileID: 1079627640}
   OB: 0
+  found: 0
 --- !u!95 &527674757
 Animator:
   serializedVersion: 5
@@ -7545,6 +7546,7 @@ MonoBehaviour:
   acceptColor: {r: 0.5660378, g: 0.19490923, b: 0.48485023, a: 0}
   correctSound: {fileID: 1079627640}
   OB: 0
+  found: 0
 --- !u!135 &871755579
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11463,6 +11465,10 @@ MonoBehaviour:
   knifeReplaceCount: 2
   stainsToCleanCount: 3
   correctlyStoredContainers: 0
+  indicators:
+  - {fileID: 527674756}
+  - {fileID: 871755578}
+  - {fileID: 1319429232}
   hooks:
   - {fileID: 8080169204949841094}
   - {fileID: 1902716259}
@@ -11470,9 +11476,10 @@ MonoBehaviour:
   - {fileID: 5333312330198919801}
   - {fileID: 1177462679}
   - {fileID: 7764209881804513687}
+  _hazCount: 0
   _knfCount: 0
   _clnCount: 0
-  _strCount: 0
+  _storCount: 0
 --- !u!1001 &1312807136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11619,6 +11626,7 @@ MonoBehaviour:
   acceptColor: {r: 0.5660378, g: 0.19490923, b: 0.48485023, a: 0}
   correctSound: {fileID: 1079627640}
   OB: 0
+  found: 0
 --- !u!135 &1319429233
 SphereCollider:
   m_ObjectHideFlags: 0

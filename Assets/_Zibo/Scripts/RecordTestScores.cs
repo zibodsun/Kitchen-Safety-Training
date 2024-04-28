@@ -12,6 +12,9 @@ public class RecordTestScores : MonoBehaviour
     public int stainsToCleanCount = 3;
     public int correctlyStoredContainers = 0;
 
+    [Header("Hazard Indicators")]
+    public List<Hazard> indicators;
+
     [Header("Knife Task Components")]
     public List<ReceiveKnife> hooks;
 
@@ -19,14 +22,21 @@ public class RecordTestScores : MonoBehaviour
     public List<DryableElement> elements;
 
     [Header("Private Counters (Updates on Submit)")]
-    [SerializeField] int _knfCount;
+    [SerializeField] int _hazCount;     // Hazards Found
+    [SerializeField] int _knfCount;     // Hazards Fixed
     [SerializeField] int _clnCount;
-    [SerializeField] int _strCount;
+    [SerializeField] int _storCount;
 
     public void SubmitScores() {
+        _hazCount = 0;
         _knfCount = 0;
         _clnCount = 0;
-        _strCount = 0;
+        _storCount = 0;
+
+        foreach (Hazard i in indicators)
+        {
+            if (i.found) { _hazCount++; }
+        }
 
         foreach (ReceiveKnife h in hooks) {
             if (h.trig) { _knfCount++; }
