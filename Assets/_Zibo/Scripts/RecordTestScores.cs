@@ -27,6 +27,14 @@ public class RecordTestScores : MonoBehaviour
     [SerializeField] int _clnCount;
     [SerializeField] int _storCount;
 
+    [Header("Global Score Tracking")]
+    [SerializeField] FinalScoreCounter _scoreCounter;
+
+    private void Awake()
+    {
+        _scoreCounter = FindAnyObjectByType<FinalScoreCounter>();    
+    }
+
     public void SubmitScores() {
         _hazCount = 0;
         _knfCount = 0;
@@ -45,5 +53,7 @@ public class RecordTestScores : MonoBehaviour
         foreach (DryableElement d in elements) { 
             if (d.clean) { _clnCount++; }
         }
+
+        _scoreCounter.SubmitScenario(_hazCount, _knfCount, _clnCount, _storCount);
     }
 }
