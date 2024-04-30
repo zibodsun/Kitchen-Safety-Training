@@ -21,6 +21,9 @@ public class RecordTestScores : MonoBehaviour
     [Header("Cleaning Task Components")]
     public List<DryableElement> elements;
 
+    [Header("Storage Task Components")]
+    public StorageArea[] colliders = new StorageArea[3];
+
     [Header("Private Counters (Updates on Submit)")]
     [SerializeField] int _hazCount;     // Hazards Found
     [SerializeField] int _knfCount;     // Hazards Fixed
@@ -52,6 +55,11 @@ public class RecordTestScores : MonoBehaviour
 
         foreach (DryableElement d in elements) { 
             if (d.clean) { _clnCount++; }
+        }
+
+        foreach (StorageArea s in colliders)
+        {
+            _storCount = _storCount + s.GetStoredAmount();
         }
 
         _scoreCounter.SubmitScenario(_hazCount, _knfCount, _clnCount, _storCount);
