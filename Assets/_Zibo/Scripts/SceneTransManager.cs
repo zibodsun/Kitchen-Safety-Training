@@ -9,6 +9,11 @@ public class SceneTransManager : MonoBehaviour
     public Animator anim;
     public bool debugLoadScene;
 
+    [Header("Objects to disable in introduction")]
+    public GameObject environment;
+    public GameObject ui;
+    public GameObject objects;
+
     float _fadeTime;
 
     private void Awake()
@@ -34,5 +39,11 @@ public class SceneTransManager : MonoBehaviour
         yield return new WaitForSeconds(_fadeTime);
         SceneManager.LoadScene(buildIndex);
         anim.Play("FadeIn");
+    }
+
+    public void OnboardingToIntroductionSwap() {
+        environment.SetActive(false);
+        ui.SetActive(false);
+        objects.SetActive(false);
     }
 }
