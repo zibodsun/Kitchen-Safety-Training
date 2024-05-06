@@ -12,6 +12,7 @@ public class FoodContainer : MonoBehaviour
     }
 
     public Type foodType;
+
     Vector3 _spawnPos;
     Quaternion _spawnRot;
 
