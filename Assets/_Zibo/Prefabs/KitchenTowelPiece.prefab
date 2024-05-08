@@ -302,3 +302,4 @@ MonoBehaviour:
   inHand: 0
   hand: {fileID: 0}
   rollInteractable: {fileID: 0}
+  tableHeight: 1

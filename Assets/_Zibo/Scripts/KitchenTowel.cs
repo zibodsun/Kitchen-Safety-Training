@@ -8,6 +8,7 @@ public class KitchenTowel : MonoBehaviour
     public bool inHand;
     public Transform hand;
     public XRSimpleInteractable rollInteractable;
+    public float tableHeight;
 
     Rigidbody rb;
     XRGrabInteractable interactable;
@@ -23,6 +24,13 @@ public class KitchenTowel : MonoBehaviour
         if (rollInteractable.isSelected && inHand)
         {
             transform.position = hand.position;
+
+            /* if (hand.position.y < tableHeight)
+            {
+                transform.position = new Vector3(hand.position.x, tableHeight, hand.position.z);
+                transform.rotation = new Quaternion(0, hand.rotation.y, 0, 1);
+            } */
+
             transform.rotation = hand.rotation;
             rb.useGravity = false;
             rb.isKinematic = true;

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5789843903468946490}
   - component: {fileID: 3578021595848123560}
   - component: {fileID: 3941286208902585236}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DirtySpot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
