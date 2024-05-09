@@ -7,6 +7,7 @@ public class TrainingManager : MonoBehaviour
 {
     public bool knifeTraining, cleaningTraining, storageTraining;
     public AudioSource taskCompleteSound;
+    public AudioSource wellDoneSound;
     public StateMachine flow;
 
     [Header("UI elements")]
@@ -31,6 +32,7 @@ public class TrainingManager : MonoBehaviour
         if (knifeTraining != false) { return; }
         knifeTraining = true;
         taskCompleteSound.Play();
+        wellDoneSound.Play();
         k.SetActive(true);
     }
 
@@ -39,6 +41,7 @@ public class TrainingManager : MonoBehaviour
         if (cleaningTraining != false) { return; }
         cleaningTraining = true;
         taskCompleteSound.Play();
+        wellDoneSound.Play();
         c.SetActive(true);
     }
 
@@ -47,6 +50,7 @@ public class TrainingManager : MonoBehaviour
         if (storageTraining != false) { return; }
         storageTraining = true;
         taskCompleteSound.Play();
+        wellDoneSound.Play();
         fs.SetActive(true);
     }
 }
