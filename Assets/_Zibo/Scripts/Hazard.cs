@@ -6,6 +6,7 @@ public class Hazard : MonoBehaviour
 {
     public Color acceptColor;
     public AudioSource correctSound;
+    public AudioSource HazardSpottedSound;
     public bool OB;
     public bool found;
 
@@ -24,6 +25,7 @@ public class Hazard : MonoBehaviour
         {
             found = true;
             correctSound.Play();
+            HazardSpottedSound.Play();
             anim.Play("HazardIndicatorFadeOut");
         }
     }
