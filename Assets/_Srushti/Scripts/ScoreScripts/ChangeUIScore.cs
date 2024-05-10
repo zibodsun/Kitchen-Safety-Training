@@ -11,7 +11,7 @@ public class ChangeUIScore : MonoBehaviour
     public FinalScoreCounter _endScoreCounter;
 
     [Header("Project UI Elements")]
-    public Image[] scoreImages;
+    //public Image[] scoreImages;
     public TMP_Text[] scoreValue;
 
     private void Awake()
@@ -31,15 +31,5 @@ public class ChangeUIScore : MonoBehaviour
                 Debug.Log("End score array values at: " + i + "," + j + "are: " + _endScoreCounter.endScores[i, j]);
             }
         }
-
-        // Display the scores on the UI
-        //if ()
-        //{
-        //    scoreImages[].color = Color.green;
-        //}
-        //else
-        //{
-        //    scoreImages[].color = Color.red;
-        //}
     }
 }
