@@ -8,12 +8,16 @@ public class TrainingManager : MonoBehaviour
     public bool knifeTraining, cleaningTraining, storageTraining;
     public AudioSource taskCompleteSound;
     public AudioSource wellDoneSound;
+    public AudioSource TrainingCompletedSound;
+
     public StateMachine flow;
 
     [Header("UI elements")]
     public GameObject c;
     public GameObject k;
     public GameObject fs;
+
+    public GameObject endUI;
 
     private void Awake()
     {
@@ -24,6 +28,8 @@ public class TrainingManager : MonoBehaviour
     {
         if (knifeTraining && cleaningTraining && storageTraining){
             flow.TriggerUnityEvent("TrainingComplete");
+            endUI.SetActive(true);
+            TrainingCompletedSound.Play();
         }
     }
 
