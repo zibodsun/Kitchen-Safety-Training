@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/zibodsun/Kitchen-Safety-Training">
-    <img src="Assets/_Zibo/logo.jpg" alt="Logo" width="500" height="500">
+    <img src="Assets/_Zibo/logo.jpg" alt="Logo" width="400" height="400">
   </a>
 
   <h3 align="center">Training for commercial kitchen workers</h3>
