@@ -8351,6 +8351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521284686}
   - component: {fileID: 1521284687}
+  - component: {fileID: 1521284688}
   m_Layer: 0
   m_Name: ChangeUIscore
   m_TagString: Untagged
@@ -8412,6 +8413,43 @@ MonoBehaviour:
   - 
   - 
   - 
+  airtableManager: {fileID: 0}
+--- !u!114 &1521284688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521284685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914e4cdd118444d488981e16c076f470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  airtableEndpoint: https://api.airtable.com/v0/
+  accessToken: patxCmRBegvMkMXmu.58896da1c990cbfe3d224ace57eba90496230adef34a503966110d98a60be40b
+  baseId: apponiouNpQanzWoD
+  tableName: Training
+  dateTime: 
+  haz_1: 0
+  haz_2: 0
+  haz_3: 0
+  cln_1: 0
+  cln_2: 0
+  cln_3: 0
+  knf_1: 0
+  knf_2: 0
+  knf_3: 0
+  str_2: 0
+  str_3: 0
+  dataToLoad: 
+  lastRecordID: 
+  playerNameFromAirtable: 
+  volumeFromAirtable: 
+  coinsFromAirtable: 
+  timePlayedFromAirtable: 
+  healthFromAirtable: 
+  scoreFromAirtable: 
 --- !u!1 &1559396854
 GameObject:
   m_ObjectHideFlags: 0
