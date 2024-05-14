@@ -61,16 +61,17 @@ public class FinalScoreCounter : MonoBehaviour
             
             Debug.Log("end of filling scores in row:" + i + " which is scene number: " + sceneCount);
 
-            //Debug.Log("end game score count array is: ---------------------------------------------" );
+            /*
+            Debug.LogWarning("end game score count array is: ---------------------------------------------" );
 
-            //for (int i = 0; i < endScores.GetLength(0); i++)
-            //{
-            //    for (int j = 0; j < endScores.GetLength(1); j++)
-            //    {
-            //        Debug.Log("End score array values at: " +i+ "," +j+ "are: " + endScores[i, j]);
-            //    }
-            //}
-
+            for (int ix = 0; ix < endScores.GetLength(0); ix++)
+            {
+                for (int j = 0; j < endScores.GetLength(1); j++)
+                {
+                    Debug.Log("End score array values at: " +ix+ "," +j+ "are: " + endScores[ix, j]);
+                }
+            } */
+            
             break;
         }
             

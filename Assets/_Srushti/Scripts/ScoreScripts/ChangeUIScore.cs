@@ -56,12 +56,13 @@ public class ChangeUIScore : MonoBehaviour
         // Initialize scoreTexts array
         
         int index = 0;
-        for (int i = 0; i < scoreTexts.Length; i++)
+        for (int i = 0; i < _endScoreCounter.endScores.GetLength(0); i++)
         {
             for (int j = 1; j < 5; j++)
             {
                 // Convert the integer score to string
-                string scoreString = _endScoreCounter.endScores[i, j].ToString(); 
+                Debug.LogWarning("*___" + i + " " + j + "___*");
+                string scoreString = _endScoreCounter.endScores[i, j].ToString();
                 // ---- getting ERROR here: "indexoutofrangeexception: index was outside the bounds of the array." ----
 
                 // Assign the score to the corresponding TextMeshProUGUI element

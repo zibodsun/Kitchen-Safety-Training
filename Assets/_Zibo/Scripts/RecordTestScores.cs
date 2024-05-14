@@ -4,6 +4,7 @@ using System.ComponentModel;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RecordTestScores : MonoBehaviour
 {
@@ -33,9 +34,21 @@ public class RecordTestScores : MonoBehaviour
     [Header("Global Score Tracking")]
     [SerializeField] FinalScoreCounter _scoreCounter;
 
+    [Header("Debug Switch to Next Scene")]
+    public bool d_nextScene;
+
     private void Awake()
     {
         _scoreCounter = FindAnyObjectByType<FinalScoreCounter>();    
+    }
+
+    private void Update()
+    {
+        if (d_nextScene)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SubmitScores();
+        }
     }
 
     public void SubmitScores() {
