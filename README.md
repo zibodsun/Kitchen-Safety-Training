@@ -90,7 +90,7 @@ We welcome developers to add their own feature like more chores that shift persp
 
 This application was developed by students from Swansea University as a part of the EG-M130 module.
 
-* Sushti: 2334306@swansea.ac.uk
+* Srushti: 2334306@swansea.ac.uk
 * Zibo: 2357888@swansea.ac.uk
 
 ## Acknowledgments
