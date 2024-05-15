@@ -26,9 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Srushti/Scenes/1-FINAL-SCENES/EndofGameScene.unity
     guid: 67244975c61ca344ba5bb9a91d10c6b3
-  - enabled: 0
-    path: Assets/_Zibo/Scenes/AirtableDebug.unity
-    guid: 4aa2bc27d5251db4291572e18a405acc
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
