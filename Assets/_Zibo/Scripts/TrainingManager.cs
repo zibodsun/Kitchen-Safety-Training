@@ -29,7 +29,6 @@ public class TrainingManager : MonoBehaviour
         if (knifeTraining && cleaningTraining && storageTraining){
             flow.TriggerUnityEvent("TrainingComplete");
             endUI.SetActive(true);
-            TrainingCompletedSound.Play();
         }
     }
 
