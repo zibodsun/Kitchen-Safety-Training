@@ -99,7 +99,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6443035220513836574, guid: 63bbb40436015d742bbb919b25a8dc75, type: 3}
+  - {fileID: 2100000, guid: 22060a7c35b6d104ea93c49465566d2d, type: 2}
   - {fileID: -4405399478562283471, guid: 63bbb40436015d742bbb919b25a8dc75, type: 3}
   - {fileID: -1642654745573217572, guid: 63bbb40436015d742bbb919b25a8dc75, type: 3}
   - {fileID: -580896390898798407, guid: 63bbb40436015d742bbb919b25a8dc75, type: 3}
@@ -385,7 +385,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.17849922, g: 1, b: 0, a: 1}
   m_Intensity: 4
-  m_Range: 1.8962858
+  m_Range: 1.5021774
   m_SpotAngle: 24.672792
   m_InnerSpotAngle: 16.11323
   m_CookieSize: 10
