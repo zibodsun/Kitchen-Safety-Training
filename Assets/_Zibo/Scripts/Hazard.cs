@@ -18,8 +18,8 @@ public class Hazard : MonoBehaviour
     }
 
     public void HazardFound() {
-        Debug.Log("Found me!");
-        GetComponent<Renderer>().material.color = acceptColor;
+        //Debug.Log("Found me!");
+        GetComponent<Renderer>().material.color = acceptColor; // for OB only
 
         if (!OB)
         {
@@ -27,6 +27,7 @@ public class Hazard : MonoBehaviour
             correctSound.Play();
             HazardSpottedSound.Play();
             anim.Play("HazardIndicatorFadeOut");
+            GetComponent<Collider>().enabled = false;
         }
     }
 }

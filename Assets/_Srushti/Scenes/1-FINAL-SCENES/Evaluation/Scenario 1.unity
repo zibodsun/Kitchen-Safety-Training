@@ -853,10 +853,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flashlight
       objectReference: {fileID: 0}
-    - target: {fileID: 4472470915167210750, guid: 94ef3a6a007de894bba54935b7a24494, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
     - target: {fileID: 6344495967158981225, guid: 94ef3a6a007de894bba54935b7a24494, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.898
@@ -8226,7 +8222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba8b4299466bf534e9ed1b7cdae8dfc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceptColor: {r: 0.5660378, g: 0.19490923, b: 0.48485023, a: 0}
+  acceptColor: {r: 0, g: 0.8117648, b: 0.80392164, a: 0}
   correctSound: {fileID: 1079627640}
   HazardSpottedSound: {fileID: 5976674940118344668}
   OB: 0
@@ -13631,7 +13627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba8b4299466bf534e9ed1b7cdae8dfc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceptColor: {r: 0.5660378, g: 0.19490923, b: 0.48485023, a: 0}
+  acceptColor: {r: 0, g: 0.8117648, b: 0.80392164, a: 0}
   correctSound: {fileID: 1079627640}
   HazardSpottedSound: {fileID: 1856846368}
   OB: 0
@@ -20118,7 +20114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba8b4299466bf534e9ed1b7cdae8dfc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceptColor: {r: 0.5660378, g: 0.19490923, b: 0.48485023, a: 0}
+  acceptColor: {r: 0, g: 0.8117648, b: 0.80392164, a: 0}
   correctSound: {fileID: 1079627640}
   HazardSpottedSound: {fileID: 1589645147}
   OB: 0
@@ -21619,7 +21615,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418609506}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
